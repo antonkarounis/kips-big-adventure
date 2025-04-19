@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck67ygdll1wjd"]
+
+[ext_resource type="Texture2D" uid="uid://d1x1upxgcgupm" path="res://assets/sprites/fireball.png" id="2_w2t55"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dx7g7"]
+size = Vector2(57, 45)
+
+[node name="Fireball" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.5, 10.5)
+shape = SubResource("RectangleShape2D_dx7g7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_w2t55")

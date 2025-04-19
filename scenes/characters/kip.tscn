@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbasdumut3vxn"]
+
+[ext_resource type="Script" uid="uid://wbj81uwrdqt" path="res://scripts/kip.gd" id="1_i34qa"]
+[ext_resource type="Texture2D" uid="uid://bapq2t0v8ts7u" path="res://assets/sprites/kip.png" id="2_qfqd7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dx7g7"]
+size = Vector2(28.1715, 25.2647)
+
+[node name="Kip" type="CharacterBody2D"]
+script = ExtResource("1_i34qa")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.968333, -9)
+scale = Vector2(1.63061, 1.42491)
+shape = SubResource("RectangleShape2D_dx7g7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_qfqd7")
